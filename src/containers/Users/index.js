@@ -8,15 +8,12 @@ import { useHistory } from "react-router-dom"
 import { Container, H1, Image, ContainerItens, Button, User, Backtrash } from "./styles";
 
 
-
-
 function Usuarios() {
 
 
     const [users, setUsers] = useState([]);
 
     const History = useHistory()
-
 
 
     useEffect(() => {
@@ -30,10 +27,6 @@ function Usuarios() {
         } fatchuser()
 
     }, [])
-
-
-
-
 
 
     async function Deleteuser(Userid) {
@@ -66,9 +59,6 @@ function Usuarios() {
                 </ul>
 
                 <Button onClick={gobackpages} >   <img alt="seta" src={Arrow} /> Voltar  </Button>
-
-
-
 
 
 
