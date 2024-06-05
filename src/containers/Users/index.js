@@ -54,7 +54,7 @@ function Usuarios() {
             <Image alt="logo-image" src={avatar} />
             <ContainerItens>
 
-                <H1>Usuarios</H1>
+                <H1>Usuarios.</H1>
 
                 <ul> {users.map(Users => (
                     <User key={Users.id}>
