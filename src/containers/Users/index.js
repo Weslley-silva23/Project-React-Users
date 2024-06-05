@@ -5,7 +5,6 @@ import axios from 'axios';
 import avatar from "../../assets/avatar.svg"
 
 import { useHistory } from "react-router-dom"
-
 import { Container, H1, Image, ContainerItens, Button, User, Backtrash } from "./styles";
 
 
