@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react"
 import Arrow from "../../assets/arrow.svg"
 import axios from 'axios';
 import people from "../../assets/people.svg"
-
 import { useHistory } from "react-router-dom"
 
 
@@ -18,6 +17,7 @@ function Users() {
     const inputName = useRef()
     const inputAge = useRef()
     const history = useHistory()
+
 
     async function Addnewuser() {
 
