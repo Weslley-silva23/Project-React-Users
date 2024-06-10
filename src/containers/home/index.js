@@ -18,11 +18,14 @@ function Users() {
     const inputAge = useRef()
     const history = useHistory()
 
+    const API_URL = 'https://first-project-node-pprm.vercel.app/';
+
+
 
     async function Addnewuser() {
 
 
-        const { data: newUser } = await axios.post("http://localhost:3001/users",
+        const { data: newUser } = await axios.post(`${API_URL}/users`,
             { name: inputName.current.value, age: inputAge.current.value, });
 
         setUsers([...users, newUser]);
