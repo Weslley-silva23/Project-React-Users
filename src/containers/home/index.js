@@ -14,11 +14,11 @@ function Users() {
 
 
     const [users, setUsers] = useState([]);
-    const inputName = useRef()
+    const inputName = useRef() 
     const inputAge = useRef()
     const history = useHistory()
 
-    const API_URL = 'https://first-project-node-pprm.vercel.app/';
+    const API_URL = 'https://first-project-node-pprm.vercel.app';
 
 
 
@@ -45,7 +45,7 @@ function Users() {
                 <InputLabel>Idade</InputLabel>
                 <Input ref={inputAge} placeholder="Idade:" />
 
-                <Button onClick={Addnewuser}  >Cadastrar <img alt="seta" src={Arrow} /> </Button>
+                <Button onClick={Addnewuser} >Cadastrar <img alt="seta" src={Arrow} /> </Button>
 
 
 

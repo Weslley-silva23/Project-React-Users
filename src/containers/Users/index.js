@@ -15,11 +15,14 @@ function Usuarios() {
 
     const History = useHistory()
 
+    const API_URL = 'https://first-project-node-pprm.vercel.app';
+
+
 
     useEffect(() => {
         async function fatchuser() {
 
-            const { data: newUsers } = await axios.get("http://localhost:3001/users")
+            const { data: newUsers } = await axios.get(`${API_URL}/users`);
 
 
             setUsers(newUsers);
@@ -31,7 +34,7 @@ function Usuarios() {
 
     async function Deleteuser(Userid) {
 
-        await axios.delete(`http://localhost:3001/users/${Userid}`)
+        await axios.delete(`${API_URL}/users/${Userid}`);
         const newUsers = users.filter((user) => user.id !== Userid);
 
         setUsers(newUsers)
